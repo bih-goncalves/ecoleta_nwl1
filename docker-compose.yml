@@ -18,6 +18,19 @@ services:
       - '3333:3333'
     networks:
       - bubble
+  # api.frontend.dev:
+  #   container_name: api.frontend.dev
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - ./frontend:/app
+  #     - node_modules-frontend:/app/node_modules
+  #   ports:
+  #     - '3000:3000'
+  #   networks:
+  #     - bubble
 
 volumes:
   node_modules-backend:
+  # node_modules-frontend:
